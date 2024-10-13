@@ -1,0 +1,25 @@
+
+.container {
+    background-color: #11D739;
+    width: 90px;
+    height: 20px;
+    padding: 300px;
+    margin: 200px;
+    border: 10px solid #592ebe;
+}
+.mell {
+    background-color: #592ebe;
+    width: 10px;
+    height: 70px;
+    padding: 100px;
+    margin: 200px;
+    border: 9px solid #11D739;
+}
+.hello{
+    background-color: #FE0901;
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    margin: 400px;
+    border: 9px solid #000000;
+}
