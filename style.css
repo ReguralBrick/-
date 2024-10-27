@@ -1,25 +1,28 @@
-
-.container {
-    background-color: #11D739;
-    width: 90px;
-    height: 20px;
-    padding: 300px;
-    margin: 200px;
-    border: 10px solid #592ebe;
-}
-.mell {
-    background-color: #592ebe;
-    width: 10px;
-    height: 70px;
-    padding: 100px;
-    margin: 200px;
-    border: 9px solid #11D739;
-}
-.hello{
-    background-color: #FE0901;
-    width: 90px;
-    height: 90px;
-    padding: 10px;
-    margin: 400px;
-    border: 9px solid #000000;
-}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0;
+    background-color: #f0f0f0; /* Light gray background */
+  }
+  
+  .cube {
+    width: 50px; /* Width of the cube */
+    height: 50px; /* Height of the cube */
+    background-color: brown; /* Brown color */
+    animation: moveCube 2s ease-in-out infinite; /* Animation settings */
+  }
+  
+  @keyframes moveCube {
+    0% {
+      transform: translateX(0); /* Starting position */
+    }
+    50% {
+      transform: translateX(200px); /* Move forward */
+    }
+    100% {
+      transform: translateX(0); /* Move backward */
+    }
+  }
+  

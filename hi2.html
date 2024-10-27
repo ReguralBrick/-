@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dancing bricks</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full height of the viewport */
+            margin: 0;
+            background-color: #f0f0f0; /* Light gray background */
+            position: relative; /* Position relative for absolute child elements */
+        }
+
+        .cube {
+            width: 50px; /* Width of the cube */
+            height: 50px; /* Height of the cube */
+            background-color: brown; /* Brown color */
+            position: absolute; /* Position absolute for animation */
+        }
+
+        /* Animation for North movement */
+        .north {
+            animation: moveNorth 2s ease-in-out infinite; /* Animation settings */
+        }
+
+        /* Animation for South movement */
+        .south {
+            animation: moveSouth 2s ease-in-out infinite; /* Animation settings */
+        }
+
+        /* Animation for East movement */
+        .east {
+            animation: moveEast 2s ease-in-out infinite; /* Animation settings */
+        }
+
+        /* Animation for West movement */
+        .west {
+            animation: moveWest 2s ease-in-out infinite; /* Animation settings */
+        }
+
+        @keyframes moveNorth {
+            0% {
+                transform: translateY(0); /* Starting position */
+            }
+            50% {
+                transform: translateY(-200px); /* Move up (north) */
+            }
+            100% {
+                transform: translateY(0); /* Return to starting position */
+            }
+        }
+
+        @keyframes moveSouth {
+            0% {
+                transform: translateY(0); /* Starting position */
+            }
+            50% {
+                transform: translateY(200px); /* Move down (south) */
+            }
+            100% {
+                transform: translateY(0); /* Return to starting position */
+            }
+        }
+
+        @keyframes moveEast {
+            0% {
+                transform: translateX(0); /* Starting position */
+            }
+            50% {
+                transform: translateX(200px); /* Move right (east) */
+            }
+            100% {
+                transform: translateX(0); /* Return to starting position */
+            }
+        }
+
+        @keyframes moveWest {
+            0% {
+                transform: translateX(0); /* Starting position */
+            }
+            50% {
+                transform: translateX(-200px); /* Move left (west) */
+            }
+            100% {
+                transform: translateX(0); /* Return to starting position */
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="cube north"></div> <!-- North Cube -->
+    <div class="cube south"></div> <!-- South Cube -->
+    <div class="cube east"></div> <!-- East Cube -->
+    <div class="cube west"></div> <!-- West Cube -->
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./hi.html"><button>back</button></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+</html>
